@@ -3,10 +3,13 @@
 How everything connects.
 
 ## Power side (high current)
+
 Battery (+) ─ fuse (40A) ─ bus ─┬─ ESC #1 fat red
-└─ ESC #2 fat red
+                                └─ ESC #2 fat red
+
 Battery (−) ─ bus ──────────────┬─ ESC #1 fat black
-└─ ESC #2 fat black
+                                └─ ESC #2 fat black
+
 Battery (+ and −) ─ also → 5V BEC input
 
 Use XT60 or XT90 connectors for the main battery. Ring terminals at the bus bar.

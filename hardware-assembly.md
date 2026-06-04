@@ -49,5 +49,4 @@ Physical mounting and assembly of all components.
 ## Waterproofing
 
 - All electronics in a dry compartment
-- Cable pass-throughs sealed (marine sealant or grommets)
 - Battery compartment waterproof

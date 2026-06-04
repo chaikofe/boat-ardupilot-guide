@@ -17,7 +17,7 @@ The R9 SX uses the ACCESS protocol — registration first, then bind.
 2. Scroll to **[Reg]**
 3. Power the R9 SX **while holding its F/S button!!!** — RED + GREEN LEDs both solid
 4. Press ENT on [Reg]
-5. Receiver LEDs flash, radio says "Registration OK"
+5. Receiver LEDs flash, radio says "Registration OK."
 6. Power off the receiver
 
 ### Bind
@@ -32,3 +32,17 @@ The R9 SX uses the ACCESS protocol — registration first, then bind.
 ## Radio MIXER
 
 MODEL SETUP → MIXER page. Set each channel:
+CH01: Source = Rud, Weight = 100      (steering)
+CH03: Source = Thr, Weight = 100      (throttle)
+CH05: Source = SD,  Weight = 100      (arm switch)
+CH06: Source = SA,  Weight = 100      (3-position mode switch)
+
+CH01 line 2: Source = Thr, Curve = Func |x|, Multiplex = Multiply, Weight = 100
+
+This makes steering authority scale with throttle level — no motor reversal during turns.
+
+## Receiver Options
+
+External RF → Receiver 1 → Options:
+- **Protocol:** S.Port
+- **Failsafe:** No Pulses (so Cube detects RC loss)

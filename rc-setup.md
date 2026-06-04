@@ -32,10 +32,10 @@ The R9 SX uses the ACCESS protocol — registration first, then bind.
 ## Radio MIXER
 
 MODEL SETUP → MIXER page. Set each channel:
-CH01: Source = Rud, Weight = 100      (steering)
-CH03: Source = Thr, Weight = 100      (throttle)
-CH05: Source = SD,  Weight = 100      (arm switch)
-CH06: Source = SA,  Weight = 100      (3-position mode switch)
+CH01: Source = Rud, Weight = 100  (steering)
+CH03: Source = Thr, Weight = 100  (throttle)
+CH05: Source = SD,  Weight = 100  (arm switch)
+CH06: Source = SA,  Weight = 100  (3-position mode switch)
 
 CH01 line 2: Source = Thr, Curve = Func |x|, Multiplex = Multiply, Weight = 100
 

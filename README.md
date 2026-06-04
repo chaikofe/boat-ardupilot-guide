@@ -9,7 +9,7 @@ This guide walks through setting up a boat that can:
 - Hold position automatically using GPS
 - Run autonomous waypoint missions
 
-## What you'll build
+## What the build is
 
 A skid-steer surface boat with:
 - **Cube Orange Plus** flight controller

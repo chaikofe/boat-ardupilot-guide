@@ -57,7 +57,8 @@ For bench testing only, set `ARMING_CHECK = 0`. **Set back to 1 before water.**
 - Verify compass: point bow north, HUD shows ~0°. If wrong, redo compass cal outdoors.
 - If the compass is fine: increase `WP_RADIUS` to 5, increase `NAVL1_PERIOD` to 15 (if the parameter exists)
 - Check that the mission has valid waypoints in the PLAN tab
-
+- Go Basic Tuning in Config Tuning, ATC_STR_RAT_FF to
+  
 ## Boat reverses one motor during a turn at speed
 
 **Cause:** Standard skid-steer math — at high throttle + high steering, one motor reverses to create the differential.

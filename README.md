@@ -27,7 +27,8 @@ A skid-steer surface boat with:
 4. [RC Setup](rc-setup.md)
 5. [Calibrations](calibrations.md)
 6. [Tuning](tuning.md)
-7. [Troubleshooting](troubleshooting.md)
+7. [Field Operations](field-operations.md)
+8. [Troubleshooting](troubleshooting.md)
 
 ## Downloads
 

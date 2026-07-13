@@ -81,3 +81,13 @@ For bench testing only, set `ARMING_CHECK = 0`. **Set back to 1 before water.**
 6. Disarm
 
 Both ESCs are now calibrated to the same range.
+
+## Different PC or Param File — Does It Actually Matter?
+
+**Connecting a different laptop or Mission Planner install never changes your vehicle's behavior by itself.** Mission Planner only *reads* whatever parameters are currently stored on the Cube's flash — it doesn't push, sync, or overwrite anything just by connecting, no matter what that laptop's Mission Planner has done before or on other projects. Nothing is written unless you explicitly click **Write Params**, use **Load from File → Write Params**, or manually edit a value and press Enter.
+
+So if behavior changes between sessions where different PCs or param files were involved, it's because one of these deliberate actions happened — not because of the PC itself. The most common cause is a **stale `.param` file getting loaded and written**, easy to do mid-troubleshooting without realizing it, especially if a laptop has old backups sitting in its Downloads folder from an earlier, less-complete stage of the build. Other causes: radio or compass calibration was rerun and overwrote the working values, or a parameter got manually edited and left in place.
+
+Before trusting any `.param` file, check a few sanity values — or in a bad case, compare all the key parameters between the suspect file and your last known-good backup: `COMPASS_DEV_ID` / `COMPASS_DEV_ID2` should be real numbers, not `0` (0 means the compass was never actually bound to the hardware); `GPS1_CAN_NODEID` should be a real node ID, not `0`; and `RC*_TRIM` values should look like sane centers (~1500), not extreme values near a channel's min or max. A quick spot-check of these three catches most bad files, but if something still feels wrong after loading, do a full diff of every parameter against your working backup — that's the only way to catch a subtler issue hiding outside the usual suspects.
+
+**Practical rule:** keep one authoritative `.param` file (version-controlled, e.g. in this repo) and only ever load from that, regardless of which laptop you're using. After every successful session, re-export the current parameters and update that one backup. If something breaks after switching machines, export params before and after and diff the two files — that tells you definitively whether the Cube's stored parameters actually changed, or whether the cause was physical (a loose connector) or environmental (compass interference at the new location) instead.

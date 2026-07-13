@@ -15,7 +15,7 @@ A skid-steer surface boat with:
 - **Cube Orange Plus** flight controller
 - **2× Blue Robotics T500** thrusters
 - **2× Basic ESC 500** speed controllers
-- **Here2 GPS/compass**
+- **Here4 (Here2 compatible) GPS/compass**
 - **RFD900x** telemetry radio
 - **FrSky R9M + R9 SX** long-range RC system
 

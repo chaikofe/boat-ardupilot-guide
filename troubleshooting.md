@@ -16,9 +16,9 @@ Common problems and fixes.
 **Cause:** SERVO function not set, or skid-steer mixing not engaged.
 
 **Fix:**
-- Verify `FRAME_TYPE = 2` (Boat)
-- Verify `SERVO1_FUNCTION = 73` AND `SERVO3_FUNCTION = 74`
-- In Motor Test, try **Test motor C** (drives MAIN OUT 3), not Motor B (empty)
+- Verify `FRAME_CLASS = 2` (Boat)
+- Verify `SERVO1_FUNCTION = 74` AND `SERVO3_FUNCTION = 73`
+- In Motor Test, try **Test motor C/A or All** (drives MAIN OUT 3), not Motor B (empty)
 
 ## Receiver bound but no signal to Cube
 

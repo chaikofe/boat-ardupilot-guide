@@ -34,4 +34,4 @@ A skid-steer surface boat with:
 
 - [Parameter file](boat_params).param) — load this into Mission Planner
 
-**Last updated:** [19.06.2026]
+**Last updated:** [13.07.2026]
